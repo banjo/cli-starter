@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 
-import { cli, command as cliCommand } from "cleye";
+import { cli, command } from "cleye";
 import { version } from "../package.json";
 
 console.log(); // Add a newline
 
 const name = "<name>";
 
-const subCommand = cliCommand(
+const subCommand = command(
     {
         name: "subcommand",
         parameters: [name],
@@ -16,7 +16,7 @@ const subCommand = cliCommand(
             usage: "subcommand <name>",
         },
     },
-    async (argv) => {
+    async argv => {
         console.log(`Hello ${argv.name}`);
     }
 );
@@ -30,5 +30,5 @@ cli(
             description: "Example CLI",
         },
     },
-    async (argv) => argv.showHelp()
+    async argv => argv.showHelp()
 );
