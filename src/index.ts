@@ -16,7 +16,7 @@ const subCommand = command(
             usage: "subcommand <name>",
         },
     },
-    async argv => {
+    argv => {
         console.log(`Hello ${argv.name}`);
     }
 );
@@ -30,5 +30,5 @@ cli(
             description: "Example CLI",
         },
     },
-    async argv => argv.showHelp()
+    argv => argv.showHelp()
 );
