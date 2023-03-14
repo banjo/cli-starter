@@ -17,7 +17,7 @@ const subCommand = command(
         },
     },
     argv => {
-        console.log(`Hello ${argv.name}`);
+        console.log(`Hello ${argv._.name}`);
     }
 );
 
