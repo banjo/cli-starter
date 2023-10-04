@@ -1,6 +1,6 @@
+import { createHelloWorldCommand } from "@/commands/hello-world";
 import { cli } from "cleye";
 import { version } from "../package.json";
-import { createHelloWorldCommand } from "./commands/hello-world";
 
 export const argv = cli(
     {
