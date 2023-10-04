@@ -1,14 +1,15 @@
 {
     "compilerOptions": {
-        "target": "es2020",
-        "module": "NodeNext",
+        "target": "es2018",
         "lib": ["esnext"],
+        "module": "esnext",
+        "rootDir": ".",
         "moduleResolution": "node",
+        "resolveJsonModule": true,
         "esModuleInterop": true,
         "strict": true,
         "strictNullChecks": true,
-        "resolveJsonModule": true,
-        "skipLibCheck": true,
-        "skipDefaultLibCheck": true
+        "skipDefaultLibCheck": true,
+        "skipLibCheck": true
     }
 }

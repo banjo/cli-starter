@@ -1,5 +1,6 @@
 import { cli } from "cleye";
 import { version } from "../package.json";
+import { createHelloWorldCommand } from "./commands/hello-world";
 
 export const argv = cli(
     {
@@ -8,8 +9,9 @@ export const argv = cli(
         help: {
             description: "Example CLI",
         },
+        commands: [createHelloWorldCommand()],
     },
-    argv => argv.showHelp()
+    args => args.showHelp()
 );
 
 export type Args = typeof argv;

@@ -1,9 +1,5 @@
 #!/usr/bin/env node
+import { argv } from "./cli";
 
-import { Args, argv } from "./cli";
-
-const main = (args: Args) => {
-    console.log(args);
-};
-
-main(argv);
+// run the cli
+argv;
