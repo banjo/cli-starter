@@ -1,6 +1,5 @@
 #!/usr/bin/env node
+import { main } from "@/cli";
+import { runMain } from "citty";
 
-import { argv } from "@/cli";
-
-// run the cli
-argv;
+runMain(main);

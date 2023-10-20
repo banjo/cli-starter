@@ -1,17 +1,22 @@
-import { createHelloWorldCommand } from "@/commands/hello-world";
-import { cli } from "cleye";
+import { defineCommand } from "citty";
 import { version } from "../package.json";
 
-export const argv = cli(
-    {
+export const main = defineCommand({
+    meta: {
         name: "pkg-name",
         version,
-        help: {
-            description: "Example CLI",
-        },
-        commands: [createHelloWorldCommand()],
+        description: "Example CLI",
     },
-    args => args.showHelp()
-);
-
-export type Args = typeof argv;
+    args: {
+        dev: {
+            type: "boolean",
+            description: "Run in development mode",
+            required: false,
+            default: false,
+            alias: "d",
+        },
+    },
+    subCommands: {
+        helloWorld: () => import("@/commands/hello-world").then(m => m.helloWorldCommand),
+    },
+});

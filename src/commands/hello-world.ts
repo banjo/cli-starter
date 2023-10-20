@@ -1,25 +1,22 @@
-import { command } from "cleye";
-import {} from "type-flag"; // make build happy
+import { defineCommand, showUsage } from "citty";
 
-export const createHelloWorldCommand = () =>
-    command(
-        {
-            name: "hello-world",
-            parameters: [],
-            help: {
-                description: `Hello world`,
-                usage: `hello-world`,
-            },
-            flags: {
-                example: {
-                    default: "example",
-                    type: String,
-                    alias: "e",
-                    description: `Some example flag description`,
-                },
-            },
+export const helloWorldCommand = defineCommand({
+    meta: {
+        name: "Hello world",
+        description: "A sub command example",
+    },
+    args: {
+        name: {
+            type: "string",
+            description: "Your name",
         },
-        argv => {
-            argv.showHelp();
+    },
+    run(ctx) {
+        if (ctx.args.name) {
+            console.log(`Hello ${ctx.args.name}!`);
+            return;
         }
-    );
+
+        showUsage(ctx.cmd);
+    },
+});
