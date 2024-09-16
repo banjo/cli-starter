@@ -51,7 +51,9 @@
         "@antfu/ni": "^0.20.0",
         "@banjoanton/eslint-config": "^0.2.10",
         "@banjoanton/prettier-config": "^0.0.8",
+        "@banjoanton/typescript-config": "^0.0.2",
         "@banjoanton/utils": "^0.1.41",
+        "@total-typescript/tsconfig": "^1.0.4",
         "@types/node": "^18.15.10",
         "bumpp": "^8.2.1",
         "eslint": "^9.10.0",
@@ -60,7 +62,7 @@
         "prettier": "^2.8.7",
         "tsup": "^6.7.0",
         "tsx": "^3.14.0",
-        "typescript": "^4.9.5",
+        "typescript": "^5.6.2",
         "vite": "^4.2.1",
         "vitest": "^0.28.5"
     },
