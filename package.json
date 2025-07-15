@@ -39,7 +39,10 @@
         "test": "vitest --watch=false",
         "test:dev": "vitest",
         "typecheck": "tsc --noEmit",
-        "format": "prettier --write ."
+        "format": "prettier --write .",
+        "change:add": "changeset add",
+        "change:version": "changeset version",
+        "change:publish": "changeset publish"
     },
     "dependencies": {
         "@clack/prompts": "^0.11.0",
@@ -53,9 +56,9 @@
         "@banjoanton/prettier-config": "^0.1.11",
         "@banjoanton/typescript-config": "^0.0.2",
         "@banjoanton/utils": "^1.1.8",
+        "@changesets/cli": "^2.29.5",
         "@total-typescript/tsconfig": "^1.0.4",
         "@types/node": "^24.0.14",
-        "bumpp": "^10.2.0",
         "eslint": "^9.31.0",
         "hoks": "^0.1.19",
         "pnpm": "^10.13.1",
