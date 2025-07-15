@@ -29,9 +29,9 @@
         "dist"
     ],
     "scripts": {
-        "build": "tsup",
+        "build": "tsdown",
         "preview": "node dist/bin.js",
-        "dev": "tsup --watch",
+        "dev": "tsdown --watch",
         "lint": "eslint .",
         "prepublishOnly": "nr build",
         "release": "bumpp && npm publish",
@@ -42,29 +42,29 @@
         "format": "prettier --write ."
     },
     "dependencies": {
-        "@clack/prompts": "^0.4.5",
-        "citty": "^0.1.4",
-        "execa": "^7.1.1",
-        "picocolors": "^1.0.0"
+        "@clack/prompts": "^0.11.0",
+        "citty": "^0.1.6",
+        "execa": "^9.6.0",
+        "picocolors": "^1.1.1"
     },
     "devDependencies": {
-        "@antfu/ni": "^0.20.0",
-        "@banjoanton/eslint-config": "^0.2.10",
-        "@banjoanton/prettier-config": "^0.0.8",
+        "@antfu/ni": "^25.0.0",
+        "@banjoanton/eslint-config": "^0.2.19",
+        "@banjoanton/prettier-config": "^0.1.11",
         "@banjoanton/typescript-config": "^0.0.2",
-        "@banjoanton/utils": "^0.1.41",
+        "@banjoanton/utils": "^1.1.8",
         "@total-typescript/tsconfig": "^1.0.4",
-        "@types/node": "^18.15.10",
-        "bumpp": "^8.2.1",
-        "eslint": "^9.10.0",
-        "hoks": "^0.1.8",
-        "pnpm": "^7.30.5",
-        "prettier": "^2.8.7",
-        "tsup": "^6.7.0",
-        "tsx": "^3.14.0",
-        "typescript": "^5.6.2",
-        "vite": "^4.2.1",
-        "vitest": "^0.28.5"
+        "@types/node": "^24.0.14",
+        "bumpp": "^10.2.0",
+        "eslint": "^9.31.0",
+        "hoks": "^0.1.19",
+        "pnpm": "^10.13.1",
+        "prettier": "^3.6.2",
+        "tsdown": "^0.12.9",
+        "tsx": "^4.20.3",
+        "typescript": "^5.8.3",
+        "vite": "^7.0.4",
+        "vitest": "^3.2.4"
     },
     "prettier": "@banjoanton/prettier-config"
 }
