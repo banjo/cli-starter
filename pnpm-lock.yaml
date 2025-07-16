@@ -49,8 +49,8 @@ importers:
         specifier: ^9.31.0
         version: 9.31.0(jiti@2.4.2)
       hoks:
-        specifier: ^0.1.19
-        version: 0.1.19(typescript@5.8.3)
+        specifier: ^0.1.20
+        version: 0.1.20(typescript@5.8.3)
       pnpm:
         specifier: ^10.13.1
         version: 10.13.1
@@ -1572,8 +1572,8 @@ packages:
   header-case@2.0.4:
     resolution: {integrity: sha512-H/vuk5TEEVZwrR0lp2zed9OCo1uAILMlx0JEMgC26rzyJJ3N1v6XkwHHXJQdR2doSjcGPM6OKPYoJgf0plJ11Q==}
 
-  hoks@0.1.19:
-    resolution: {integrity: sha512-5b3x2DCgNMIFjtLTzU+s3gzvOkrAX8pA70Z02986ZJxbJ7c8dIfRK1KFeUwgv5D/xw6E2lmHWropaIyLsr7idA==}
+  hoks@0.1.20:
+    resolution: {integrity: sha512-1ZXiFrpY5aQumd2l1CP9NkxdFrzsm3BFVj8V9+pDaZfksh/1RQCgE7DFgNTHhiHT5XhJolD2a/wMz9WeGxFEgw==}
     hasBin: true
 
   hookable@5.5.3:
@@ -4380,7 +4380,7 @@ snapshots:
       capital-case: 1.0.4
       tslib: 2.8.1
 
-  hoks@0.1.19(typescript@5.8.3):
+  hoks@0.1.20(typescript@5.8.3):
     dependencies:
       '@typescript-eslint/typescript-estree': 5.62.0(typescript@5.8.3)
       change-case: 4.1.2
