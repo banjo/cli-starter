@@ -42,7 +42,8 @@
         "format": "prettier --write .",
         "change:add": "changeset add",
         "change:version": "changeset version",
-        "change:publish": "changeset publish"
+        "change:publish": "changeset publish",
+        "postinstall": "hoks --init"
     },
     "dependencies": {
         "@clack/prompts": "^0.11.0",
